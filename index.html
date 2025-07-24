@@ -9,5 +9,16 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+     <script>
+    export const testVar = 'hello'
+    
+    export default {
+      mount() {
+        console.log('mounted')
+      }
+    }
+    
+    console.log('app loaded')
+  </script>
   </body>
 </html>
