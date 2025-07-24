@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { formatDate } from '../common/index.js'
 
 defineProps({
   msg: String,
@@ -34,6 +35,7 @@ const count = ref(0)
     >.
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <p>{{ formatDate(new Date()) }}</p>
 </template>
 
 <style scoped>
